@@ -1,0 +1,494 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+
+html,
+body {
+  font-family: "Rubik";
+}
+
+/* Body */
+
+/* HEADING OF SECTIONS */
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+section .sub-heading {
+  font-size: 16px;
+  display: flex;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgb(150, 150, 150);
+}
+
+section .sub-heading::after {
+  content: "";
+  height: 1px;
+  background-color: rgb(150, 150, 150);
+  width: 100px;
+  margin: auto 10px;
+}
+main div:has(.sub-heading + .heading) {
+  padding: 0 12px;
+  margin-bottom: 20px;
+}
+section .heading {
+  font-size: 45px;
+  margin: 20px 0 0 0;
+}
+
+section .description {
+  width: 50%;
+  color: rgb(150, 150, 150);
+  line-height: 25px;
+}
+/* END OF : HEADING OF SECTIONS */
+.container-md{
+  padding-left: 0px !important; 
+  padding-right: 0px !important;
+}
+.rooms-top {
+  padding: 112px;
+}
+
+.room-row {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 45px;
+}
+
+.room-oder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border-radius: 5px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.room-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.room-des {
+  padding: 90px 111px 90px 111px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.room-des .heading {
+  font-size: 38px;
+  margin-bottom: 30px;
+  font-weight: 10;
+  line-height: 1.5;
+  color: #000000c2;
+}
+
+.room-des span {
+  font-size: 40px;
+  color: #212529;
+}
+
+.room-des sup {
+  font-size: 20px;
+  color: #212529;
+  top: -1em;
+}
+
+.room-des sub {
+  font-size: 20px;
+  color: #212529;
+  bottom: 0em;
+}
+
+.room-des ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.room-des li {
+  font-size: 18px;
+  margin: 10px;
+  padding: 0px;
+  list-style: none;
+  color: #808080;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.room-des li strong {
+  font-weight: 450;
+  color: #000;
+  font-size: 18px;
+}
+
+.room-des li sup {
+  color: #808080;
+  font-size: 12px;
+  top: -6px;
+}
+
+.btn-readmore {
+  display: block;
+  width: fit-content;
+  padding: 15px 40px;
+  margin-top: 35px !important;
+  color: white;
+  background-color: #fc3c3c;
+  border: 2px #fc3c3c solid;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-readmore:hover {
+  background: none;
+  color: #fc3c3c;
+}
+
+/* More rooms text */
+
+.more-room-wrap {
+  padding: 0px 25% 48px 25%;
+}
+
+.more-room {
+  padding: 100px 0px 0px;
+  margin: 0px -15px 48px;
+  text-align: center;
+}
+
+.more-room .heading {
+  color: #000000e3;
+  font-size: 53px;
+  font-weight: 350;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.more-room-content {
+  font-size: 17px;
+  margin-bottom: 1rem;
+  font-weight: 350;
+}
+
+/* Room bot  */
+.room-bot-wrap {
+  background-color: #fff;
+  display: grid;
+  padding: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, 800px);
+  grid-column-gap: 45px;
+  grid-row-gap: 48px;
+}
+
+.room-bot-detail { 
+  height: 100%;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.room-bot-img {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+.room-bot-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.room-bot-img:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+.room-bot-text {
+  padding: 30px;
+}
+
+.room-bot-text .heading {
+  font-size: 30px;
+  margin-bottom: 26px;
+  font-weight: 10;
+  line-height: 1.5;
+  color: #000000c2;
+}
+
+.room-bot-text .heading:hover a,
+.room-bot-detail .heading:active a {
+  color: rgb(255, 50, 50);
+}
+
+.room-bot-text span {
+  font-size: 35px;
+  /* color: #212529; */
+  color: #808080;
+}
+
+.room-bot-text .price .number,
+.rooms-top .price .number {
+  font-size: 50px;
+  color: #212529;
+}
+
+.room-bot-text sup,
+.rooms-top .price sup {
+  font-size: 18px;
+  /* color: #212529; */
+  color: #808080;
+  top: -1em;
+}
+
+.room-bot-text sub,
+.rooms-top .price sub {
+  font-size: 18px;
+  /* color: #212529; */
+  color: #808080;
+  bottom: 0em;
+}
+
+.room-bot-text ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.room-bot-text li {
+  font-size: 16px;
+  margin: 10px;
+  padding: 0px;
+  list-style: none;
+  color: #808080;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.room-bot-text li strong {
+  font-weight: 450;
+  color: #000;
+  font-size: 16px;
+}
+
+.room-bot-text li sup {
+  color: #808080;
+  font-size: 12px;
+  top: -6px;
+}
+
+/* SECTION RESTAURANT */
+section.restaurant {
+  background-color: rgb(250, 250, 250);
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+.restaurant-options {
+  margin: 50px 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+.restaurant-btn {
+  width: 100%;
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  background: none;
+  border: none;
+  border-bottom: 1px rgb(150, 150, 150) solid;
+  padding: 50px auto;
+  text-transform: uppercase;
+  font-weight: lighter;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+.restaurant-btn:hover {
+  filter: brightness(50%);
+}
+.restaurant-btn.active {
+  border-color: rgb(255, 50, 50);
+  border-width: 2px;
+  color: rgb(255, 50, 50);
+}
+.restaurant__menu {
+  display: block;
+  width: 100%;
+}
+.restaurant__tab {
+  display: none;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: nowrap;
+  background: none;
+}
+.restaurant__tab.show {
+  display: flex;
+}
+
+.restaurant__menu .card-2 {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+  height: fit-content;
+}
+.restaurant__tab .image-container {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+.restaurant__tab img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant__menu .card-info {
+  padding: 30px;
+}
+.restaurant__menu .card-cost {
+  font-size: 40px;
+}
+.restaurant__menu .card-cost small {
+  font-size: 25px;
+  color: rgb(150, 150, 150);
+}
+
+/* END OF : SECTION RESTAURANT */
+
+/* SECTION : REVIEW */
+section.review {
+  margin: 0 0 90px 0;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  background-color: rgb(250, 250, 250);
+}
+
+.review-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.review-container .reviewer {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.review-container .reviewer small {
+  color: rgb(150, 150, 150);
+}
+.reviewer .image-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviewer .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviewer-info {
+  height: fit-content;
+  margin: 0 0 0 20px;
+}
+.reviewer-info h4 {
+  margin: 0;
+}
+.review .card-3 {
+  padding: 30px;
+  width: 100%;
+  min-height: 200px;
+  min-width: 300px;
+  background-color: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+/* END OF SECTION : REVIEW */
+@media only screen and (max-width: 1000px) {
+  .room-des {
+    padding: 40px 30px;
+  }
+  .room-des .heading {
+    font-size: 30px;
+  }
+  .room-des li {
+    font-size: 14px;
+    margin: 5px;
+  }
+  .room-des li strong {
+    font-size: 14px;
+  }
+  .room-bot-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, 800px);
+    grid-column-gap: 20px;
+    grid-row-gap: 35px;
+  }
+}
+
+/* Responsive for mobile */
+@media only screen and (max-width: 750px) {
+  section .container-md {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .rooms-top {
+    padding: 100px 0;
+  }
+  .card-slider .col-md-4 {
+    width: 70%;
+  }
+  .card-1 {
+    margin-bottom: 30px;
+  }
+  .card-1 h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  .card-1 .card-inner {
+    padding: 20px;
+  }
+  .card-1 ul li {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  section.restaurant {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .restaurant__tab {
+    gap: 12px;
+  }
+  .restaurant__tab.show {
+    flex-wrap: wrap;
+  }
+  .restaurant__tab.show .card-2 {
+    min-height: 0;
+  }
+  .restaurant__menu .card-info {
+    padding: 20px 30px 10px 30px;
+  }
+  .restaurant__menu .card-info p {
+    font-size: 14px;
+  }
+  #banner-1 h2 {
+    font-size: 40px;
+    max-width: 90vw;
+  }
+  section.review {
+    margin: 0 0 30px 0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .review-container {
+    flex-wrap: wrap;
+  }
+}
+/* END OF: Responsive for mobile */
+
+/* Responsive for large screens */
+@media only screen and (min-width: 1200px) {
+  .review-container {
+    flex-wrap: nowrap;
+  }
+}
+/* END OF: Responsive for large screens */
