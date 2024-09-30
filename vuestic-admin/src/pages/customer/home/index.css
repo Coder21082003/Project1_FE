@@ -1,0 +1,550 @@
+/* 
+    MAIN :
+
+    SECTION SERVICES
+*/
+body {
+  /* font-family: 'Raleway', sans-serif; */
+
+  font-family: "Rubik";
+}
+::selection {
+  background-color: rgb(250, 100, 100);
+  color: white;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.badge {
+  transform: translate(-60%, -50%) !important;
+  z-index: 4;
+  font-size: 20px;
+  background: red !important;
+}
+#heading-page .row {
+  row-gap: 12px;
+}
+#heading-page .box {
+  padding: 5px 20px;
+  font-size: 14px;
+  border-radius: 100px;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+/* SECTION : SERVICES */
+section.services {
+  display: block;
+  margin: 100px 0 50px 0;
+  background-color: #ffffff;
+}
+section .sub-heading {
+  font-size: 16px;
+  display: flex;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgb(150, 150, 150);
+}
+
+section .sub-heading::after {
+  content: "";
+  height: 1px;
+  background-color: rgb(150, 150, 150);
+  width: 100px;
+  margin: auto 10px;
+}
+
+section .heading {
+  font-size: 45px;
+  margin: 20px 0 0 0;
+}
+
+.services .row:not(:last-child) {
+  margin: 0 0 100px 0;
+}
+
+.services__item {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 80px;
+  transition: all 0.2s ease-in-out;
+}
+.services__item h3,
+.services__item p {
+  transition: all 0.2s ease-in-out;
+}
+.services__item:hover h3,
+.services__item:hover p {
+  color: rgb(250, 100, 100);
+}
+.services__item:hover img {
+  filter: grayscale(60%) contrast(250%);
+}
+.services__item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 0 20px 0 0;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100%) contrast(250%) brightness(50%);
+}
+.services__item h3 {
+  font-size: 16pt;
+}
+.services__item p {
+  color: rgb(150, 150, 150);
+  font-size: 10pt;
+}
+
+/* END OF : SECTION SERVICES */
+
+/* SECTION ROOMS */
+section.rooms {
+  background-color: rgb(250, 250, 250);
+  padding: 70px 0;
+}
+section .container-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+.rooms-container {
+  display: block;
+  position: relative;
+}
+section .description {
+  width: 50%;
+  color: rgb(150, 150, 150);
+  line-height: 25px;
+}
+.rooms .heading {
+  margin-bottom: 40px;
+}
+.card-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px 0;
+  margin: 30px 0;
+  scroll-behavior: smooth;
+}
+.card-slider .col-md-4 {
+  min-width: 300px;
+}
+.card-1 {
+  border: none;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.card-1 * {
+  transition: all 0.2s ease-in-out;
+}
+.card-1 .image-container {
+  height: 300px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-1 ul li {
+  list-style-type: none;
+  color: rgb(150, 150, 150);
+  margin: 10px 0;
+}
+.card-1 ul {
+  padding: 0;
+}
+.card-1 h3 {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+  cursor: pointer;
+}
+.card-1 .card-inner {
+  padding: 30px 20px 20px 30px;
+}
+.card-1 .card__cost {
+  font-size: 50px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.card-1 .card__cost small {
+  font-size: 20px;
+  color: rgb(150, 150, 150);
+}
+.card-1:hover li {
+  color: black;
+}
+.card-1:hover h3 {
+  color: rgb(255, 80, 80);
+}
+.card-1:hover img {
+  filter: brightness(80%);
+  transform: scale(1.01);
+}
+.card-slider::-webkit-scrollbar {
+  height: 10px;
+}
+.card-slider::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.card-slider::-webkit-scrollbar-thumb {
+  background: rgb(220, 220, 220);
+  opacity: 0.3;
+}
+.card-slider::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 200, 200);
+}
+.rooms-container .back-btn,
+.rooms-container .next-btn {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 5;
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 50% !important;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+.rooms-container .back-btn:hover,
+.rooms-container .next-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.rooms-container .next-btn {
+  right: 0%;
+}
+
+/* END OF SECTION ROOMS */
+
+/* SECTION RESTAURANT */
+section.restaurant {
+  background-color: rgb(250, 250, 250);
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+.restaurant-options {
+  margin: 50px 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+.restaurant-btn {
+  width: 100%;
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  background: none;
+  border: none;
+  border-bottom: 1px rgb(150, 150, 150) solid;
+  padding: 50px auto;
+  text-transform: uppercase;
+  font-weight: lighter;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+.restaurant-btn:hover {
+  filter: brightness(50%);
+}
+.restaurant-btn.active {
+  border-color: rgb(255, 50, 50);
+  border-width: 2px;
+  color: rgb(255, 50, 50);
+}
+.restaurant__menu {
+  display: block;
+  width: 100%;
+}
+.restaurant__tab {
+  display: none;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: nowrap;
+  background: none;
+}
+.restaurant__tab.show {
+  display: flex;
+}
+
+.restaurant__menu .card-2 {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+  max-width: 70vw;
+  margin: 0 auto;
+  height: fit-content;
+}
+.restaurant__tab .image-container {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+.restaurant__tab img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant__menu .card-info {
+  padding: 30px;
+}
+.restaurant__menu .card-info p {
+  font-size: 14px;
+  color: rgb(150, 150, 150);
+}
+.restaurant__menu .card-cost {
+  font-size: 40px;
+}
+.restaurant__menu .card-cost small {
+  font-size: 25px;
+  color: rgb(150, 150, 150);
+}
+
+/* END OF : SECTION RESTAURANT */
+
+/* BANNER */
+main .banner {
+  position: relative;
+  /* margin: 50px 0 0 0; */
+  height: 80vh;
+  width: 100%;
+  padding: 0;
+  /* background: url(https://preview.colorlib.com/theme/brighthotel/images/xbg_2.jpg.pagespeed.ic.4VF9hYXYfd.webp); */
+  background: url(../home/images/banner-1.jpg);
+  background-position: 0;
+  /* background-size: 150%; */
+  background-position: center center;
+}
+#banner-1 > div {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+#banner-1 h2 {
+  letter-spacing: 2px;
+  font-size: 70px;
+  max-width: 50vw;
+}
+/* END OF : BANNER */
+
+/* SECTION : REVIEW */
+section.review {
+  margin: 0 0 90px 0;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background-color: rgb(250, 250, 250);
+}
+
+.review-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.review-container .reviewer {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.review-container .reviewer small {
+  color: rgb(150, 150, 150);
+}
+.reviewer .image-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviewer .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviewer-info {
+  height: fit-content;
+  margin: 0 0 0 20px;
+}
+.reviewer-info h4 {
+  margin: 0;
+}
+.review .card-3 {
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  min-height: 200px;
+  min-width: 300px;
+  margin: 0 auto;
+  max-width: 70vw;
+  background-color: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+/* END OF SECTION : REVIEW */
+
+.item-move-up {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 0.6s ease-in-out;
+}
+.rooms .item-move-up {
+  transition-delay: 1s;
+  transition: all 1s ease-in-out;
+  transform: translate(0, 50vh);
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .services .row > .col-sm-4 {
+    width: 50%;
+  }
+  .services__item {
+    flex-wrap: wrap;
+  }
+  .services__item img {
+    height: 70px !important;
+    width: fit-content !important;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section .container-md {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  section.rooms {
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+  .rooms .description {
+    width: 100%;
+  }
+  .card-slider .col-md-4 {
+    width: 70%;
+  }
+  .card-1 {
+    margin-bottom: 30px;
+  }
+  .card-1 h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  .card-1 .card-inner {
+    padding: 20px;
+  }
+  .card-1 ul li {
+    margin: 0px;
+    font-size: 12px;
+  }
+  .rooms-container .back-btn,
+  .rooms-container .next-btn {
+    height: 40px;
+    width: 40px;
+  }
+
+  section.restaurant {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .restaurant__tab {
+    gap: 12px;
+  }
+  .restaurant__tab.show {
+    flex-wrap: wrap;
+  }
+  .restaurant__tab.show .card-2 {
+    min-height: 0;
+  }
+  .restaurant__menu .card-info {
+    padding: 20px 30px 10px 30px;
+  }
+  .restaurant__menu .card-info p {
+    font-size: 14px;
+  }
+  #banner-1 h2 {
+    font-size: 40px;
+    max-width: 90vw;
+  }
+  section.review {
+    margin: 0 0 30px 0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .review-container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .review-container {
+    flex-wrap: nowrap;
+  }
+}
+.frame-mess {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.message-box {
+  background-color: white;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #000;
+  width: 600px;
+  position: fixed !important;
+  z-index: 5;
+  max-width: 90vw;
+}
+.message__btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+.message__head {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  min-height: 20px;
+  background-color: #353535;
+  padding: 7px 20px;
+}
+.message__content {
+  padding: 20px;
+  font-size: 20px;
+}
+.nav-item-search{
+  margin-top: 8px;
+  width: 100px;
+  text-decoration: none;
+  height: 25px;
+}
+
+.navbar__brand{
+  padding-left: 135px;
+}
+.cart-img{
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+}
